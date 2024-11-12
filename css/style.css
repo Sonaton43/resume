@@ -222,7 +222,7 @@ span{
     background-color: var(--second-bg-color);
 }
 .about-area{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 .about-area-row{
@@ -270,6 +270,43 @@ span{
     padding: 30px 10px;
 }
 /*--- About style End ---*/
+/*--- Portfolio style Start ---*/
+.portfolio-code{
+    background-color: var(--bg-color);
+    padding: 60px 0;
+}
+.portfolio-area{
+    width: 85%;
+    margin: auto;
+}
+.portfolio-items{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .1rem solid rgba(0,0,0, .3);
+    padding: 20px 5px;
+    width: 100%;
+}
+.portfolio-items p{
+    font-size: 14pt;
+    margin: 0;
+    color: var(--text-color);
+    text-align: left;
+    text-transform: uppercase;
+}
+.portfolio-items h2{
+    font-size: 24pt;
+    text-align: left;
+    margin: 0;
+    color: var(--text-color);
+}
+.portfolio-items img{
+    margin-left: 20px;
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+/*--- Portfolio style End ---*/
 @media (max-width: 992px) {
     .header-content .home-content h1{
         font-size: 30pt;
@@ -306,9 +343,11 @@ span{
         padding: 60px 20px 40px 20px;
     }
     /*--- Header style End ---*/
+    /*--- About style Start ---*/
     .about-area-row{
         padding: 40px 0;
     }
+    /*--- About style End ---*/
 }
 
 @media (max-width: 480px) {
@@ -317,7 +356,7 @@ span{
         padding: 0;
     }
     .header-content {
-        padding-top: 60px;
+        padding-top: 20px;
     }
     .header-content .home-content h1{
         font-size: 22pt;
@@ -334,4 +373,19 @@ span{
         color: var(--text-color);
     }
     /*--- Header style End ---*/
+    /*--- About style Start ---*/
+    .about-area h2{
+        font-size: 16pt;
+        font-weight: 700;
+        margin: 0;
+        color: var(--text-color);
+    }
+    .about-area h3{
+        font-size: 14pt;
+    }
+    .about-area p{
+        font-size: 8pt;
+        line-height: 18px;
+    }
+    /*--- About style End ---*/
 }
