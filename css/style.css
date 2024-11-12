@@ -216,8 +216,60 @@
 span{
     color: var(--main-text-color);
 }
-
 /*--- Header style End ---*/
+/*--- About style Start ---*/
+.about-code{
+    background-color: var(--second-bg-color);
+}
+.about-area{
+    width: 90%;
+    margin: auto;
+}
+.about-area-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.about-area h2{
+    font-size: 22pt;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-color);
+}
+.about-area h3{
+    font-size: 20pt;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color);
+}
+.about-area h3 span{
+    color: var(--bg-color);
+}
+.about-area p{
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 18pt;
+    margin: 0;
+    color: var(--text-color);
+}
+.personal-details{
+    margin-top: 20px;
+    padding: 12px 0;
+    border-bottom: .1rem solid rgba(0,0,0, .3);
+    border-top: .1rem solid rgba(0,0,0, .3);
+    color: var(--text-color);
+}
+.details-padding{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.about-area img{
+    width: 80%;
+    margin-left: 10%;
+    padding: 30px 10px;
+}
+/*--- About style End ---*/
 @media (max-width: 992px) {
     .header-content .home-content h1{
         font-size: 30pt;
@@ -254,7 +306,9 @@ span{
         padding: 60px 20px 40px 20px;
     }
     /*--- Header style End ---*/
-    
+    .about-area-row{
+        padding: 40px 0;
+    }
 }
 
 @media (max-width: 480px) {
