@@ -1,0 +1,184 @@
+
+:root{
+    --bg-color: #264653;
+    --second-bg-color: #2A9D;
+    --text-color: #fff;
+    --main-text-color: #00E091;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+/*--- Header style start ---*/
+.header-code{
+    margin: 0;
+    padding: 0;
+}
+.header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--bg-color);
+    padding: 0 5%;
+}
+.header-nav.sticky{
+    border-bottom: .1rem solid rgba(0,0,0, .2);
+}
+.my-header{
+    font-size: 20pt;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    margin: 0;
+}
+.my-bars{
+    font-size: 20pt;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    margin: 0;
+    display: none;
+}
+.header-nav ul{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+}
+.header-nav ul li{
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: .3s ease;
+}
+.header-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 14pt;
+    font-weight: 500;
+    transition: .3s ease;
+}
+.header-nav ul li:hover a {
+    color: var(--main-text-color)
+}
+/*--- Header contnt start ---*/
+.header-content{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content .row{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    align-items: center;
+}
+.header-content .home-content h1{
+    color: var(--text-color);
+    font-size: 40pt;
+    font-weight: 700;
+    line-height: 50pt;
+    margin: 0;
+}
+.home-content h3{
+    color: var(--text-color);
+    font-size: 26pt;
+    font-size: 700;
+    margin: 0;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 20px;
+}
+.home-content p{
+    font-size: 13pt;
+    color: var(--text-color);
+}
+.btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--main-text-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-text-color);
+    font-size: 12pt;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: 0 0 1rem var(--text-color);
+    color: var(--main-text-color);
+    background: var(--text-color);
+    
+}
+.social-media a  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: 2px solid var(--main-text-color);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: var(--main-text-color);
+    margin: 10px 15px 30px 0;
+}
+.social-media a:hover{
+    background: var(--main-text-color);
+    color: var(--text-color);
+    box-shadow: 0 0 1rem var(--main-text-color);
+}
+.home-img img{
+    width: 100%;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+   0%{
+    transform: translateY(0);
+   } 
+   50%{
+    transform: translateY(-2.4rem);
+   } 
+   100%{
+    transform: translateY(0);
+   } 
+}
+span{
+    color: var(--main-text-color);
+}
+
+/*--- Header style End ---*/
+
+@media (max-width: 768px) {
+    .header-nav ul{
+        display: none;
+    }
+    .my-header{
+        padding: 20px 0;
+    }
+    .my-bars{
+        display: block;
+    }
+    .header-content {
+        padding-top: 80px; /* Adjust this value as needed for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding-top: 100px; /* Further adjust for very small screens */
+    }
+}
