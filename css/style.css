@@ -470,22 +470,22 @@ span{
 }
 .skills-items{
     border-radius: 15px;
-    background-color: #00E091;
+    background-color: rgba(0,0,0, .2);
 }
 .skills-wrapp{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 .skills-wrapp img{
-    width: 100px;
-    padding: 5px;
+    padding: 15px;
 }
 .skills-wrapp p{
     font-size: 14pt;
     font-weight: 700;
+    color: var(--text-color);
 }
 /*--- Portfolio style End ---*/
 
