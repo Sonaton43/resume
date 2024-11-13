@@ -465,22 +465,55 @@ span{
     margin: 0;
 }
 /*--- Skills style Start ---*/
+.skills-heading h3{
+    font-size: 27pt;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.skills-heading p{
+    font-size: 14pt;
+    width: 70%;
+    margin: auto;
+    padding: 15px 0;
+    color: var(--text-color);
+}
 .skills{
     padding: 10px;
+    text-align: center;
+}
+.skills p{
+    color: var(--text-color);
+    font-size: 14pt;
+    font-weight: 500;
+    padding-top: 8px;
 }
 .skills-items{
     border-radius: 15px;
     background-color: rgba(0,0,0, .2);
+    border: 2px solid rgba(0,0,0, .0);
+    transition: 0.2s ease;
+    transform: scale(180deg);
 }
 .skills-wrapp{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: 20px 10px;
 }
 .skills-wrapp img{
+    width: 70px;
     padding: 15px;
+    filter: grayscale(100%);
+}
+.skills-items:hover{
+    background: linear-gradient(45deg, rgba(33,171,155,1) 0%, rgba(6,92,82,1) 100%);
+    border: 2px solid var(--main-text-color);
+    filter: grayscale(0%);
+}
+.skills-items:hover .skills-wrapp img{
+    filter: grayscale(0%);
 }
 .skills-wrapp p{
     font-size: 14pt;
@@ -512,6 +545,11 @@ span{
     /*--- Portfolio style Start ---*/
     .portfolio-items img{
         margin-top: 20px;
+    }
+    /*--- Portfolio style Start ---*/
+    .skills-heading p{
+        font-size: 12pt;
+        width: 100%;
     }
 }
 @media (max-width: 768px) {
