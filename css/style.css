@@ -511,7 +511,7 @@ span{
 .skill-circle::before {
     content: "";
     position: absolute;
-    top: 5px; /* Adjust based on border thickness */
+    top: 5px; 
     left: 5px;
     right: 5px;
     bottom: 5px;
@@ -538,6 +538,8 @@ span{
     color: var(--text-color);
 }
 /*--- Portfolio style End ---*/
+/*--- Services style Start ---*/
+/*--- Services style End ---*/
 
 @media (max-width: 992px) {
     /*--- Header style Start ---*/
@@ -563,7 +565,7 @@ span{
     .portfolio-items img{
         margin-top: 20px;
     }
-    /*--- Portfolio style Start ---*/
+    /*--- Skills style Start ---*/
     .skills-heading p{
         font-size: 12pt;
         width: 100%;
@@ -674,4 +676,52 @@ span{
     }
     /*--- Portfolio style End ---*/
     
+}
+.services-code{
+    padding: 0;
+    margin: 0;
+    background-color: var(--second-bg-color);
+}
+.services-area{
+    padding: 40px 0;
+    color: var(--text-color);
+    text-align: center;
+}
+.serviceBox{
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
+    margin: 5px 0 0 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px -5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease 0s;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.serviceBox:hover{ background: #FB374D; }
+.serviceBox .service-icon{
+    color: #FB374D;
+    font-size: 55px;
+    margin: 0 0 20px;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox .title{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox .description{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0 0 15px;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .description{ color: rgba(255,255,255,0.8); }
+@media only screen and (max-width: 990px){
+    .serviceBox{ margin: 0 0 30px; }
 }
