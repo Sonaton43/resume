@@ -230,6 +230,7 @@ span{
     justify-content: center;
     align-items: center;
     padding: 60px 0;
+    flex-direction: row;
 }
 .about-area h2{
     font-size: 20pt;
@@ -247,9 +248,8 @@ span{
     color: var(--bg-color);
 }
 .about-area p{
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: 400;
-    line-height: 18pt;
     margin: 0;
     color: var(--text-color);
 }
@@ -300,6 +300,9 @@ span{
     display: inline-block;
     overflow: hidden;
 }
+.portfolio-items:nth-of-type(2) {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
 .portfolio-items .img{
     width: fit-content;
     position: relative;
@@ -308,8 +311,8 @@ span{
     text-align: left;
 }
 .portfolio-items p{
-    font-size: 14pt;
-    min-width: 150px;
+    font-size: 13pt;
+    min-width: 130px;
     margin: 0;
     color: var(--text-color);
     text-align: left;
@@ -355,6 +358,7 @@ span{
 .modal-body-area{
     background-color: var(--bg-color);
     color: var(--text-color);
+    border-radius: 5px;
 }
 .close-modal{
     text-decoration: none;
@@ -383,9 +387,8 @@ span{
     text-align: left;
 }
 .modal-text p{
-    font-size: 12pt;
-    font-weight: 500;
-    line-height: 18pt;
+    font-size: 13pt;
+    font-weight: 400;
     margin: 0;
     text-align: justify;
 }
@@ -417,9 +420,36 @@ span{
     border-radius: 5px;
     color: var(--text-color);
 }
-
+.custom-btn-3:hover{
+    color: var(--text-color);
+}
+/*--- Experience & Skills Start ---*/
+.experience-are{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: rgba(0,0,0, .2);
+    border-radius: 10px;
+}
+.experience{
+    padding: 20px;
+}
+.experience h5{
+    font-size: 18pt;
+    color: var(--main-text-color);
+}
+.experience h3{
+    font-size: 26pt;
+    color: var(--text-color);
+}
+.experience p{
+    font-size: 14pt;
+    color: var(--text-color);
+}
 /*--- Portfolio style End ---*/
+
 @media (max-width: 992px) {
+    /*--- Header style Start ---*/
     .header-content .home-content h1{
         font-size: 30pt;
         line-height: 35pt;
@@ -434,6 +464,11 @@ span{
         font-size: 10pt;
         color: var(--text-color);
     }
+    /*--- About style Start ---*/
+    .about-area-row{
+        flex-direction: column-reverse;
+    }
+    /*--- Portfolio style Start ---*/
     .portfolio-items img{
         margin-top: 20px;
     }
@@ -484,7 +519,7 @@ span{
         margin-bottom: 13px;
     }
     .home-content p{
-        font-size: 8pt;
+        font-size: 10pt;
         color: var(--text-color);
     }
     /*--- Header style End ---*/
@@ -499,10 +534,11 @@ span{
         font-size: 14pt;
     }
     .about-area p{
-        font-size: 8pt;
+        font-size: 10pt;
         line-height: 18px;
     }
     /*--- About style End ---*/
+    /*--- Portfolio style Start ---*/
     .portfolio-area h2{
         font-size: 18pt;
         margin-bottom: 30px;
@@ -511,7 +547,7 @@ span{
         font-size: 14pt;
     }
     .portfolio-items p{
-        font-size: 8pt;
+        font-size: 10pt;
     }
     .portfolio-items h2{
         font-size: 14pt;
@@ -519,4 +555,22 @@ span{
     .portfolio-items img{
         margin: 0;
     }
+    .modal-text{
+        padding: 10px 20px;
+    }
+    .modal-text p{
+        font-size: 10px;
+    }
+    .cards-content p{
+        padding: 0 0 5px 0;
+    }
+    .cards-content{
+        padding: 20px;
+        text-align: left;
+    }
+    .cards-content p{
+        font-size: 8pt;
+    }
+    /*--- Experience & Skills style Start ---*/
+    /*--- Portfolio style End ---*/
 }
