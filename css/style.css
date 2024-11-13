@@ -1,7 +1,7 @@
 
 :root{
     --bg-color: #264653;
-    --second-bg-color: #2A9D;
+    --second-bg-color: #21ab9bdd;
     --text-color: #fff;
     --main-text-color: #00E091;  
 }
@@ -424,27 +424,68 @@ span{
     color: var(--text-color);
 }
 /*--- Experience & Skills Start ---*/
-.experience-are{
+.experience-skills h2{
+    text-align: left;
+    font-size: 27pt;
+    font-weight: 700;
     margin: 0;
+    padding: 20px 10px;
+}
+.experience-skills .fa-award,.experience-skills .fa-graduation-cap{
+    color: var(--second-bg-color);
+}
+.experience-are{
+    width: 100%;
     padding: 0;
     text-align: left;
     background-color: rgba(0,0,0, .2);
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(180deg);
+}
+.experience-are:hover{
+    background: linear-gradient(45deg, rgba(33,171,155,1) 0%, rgba(6,92,82,1) 100%);
 }
 .experience{
-    padding: 20px;
+    padding: 25px;
+    margin: 15px 0;
 }
 .experience h5{
-    font-size: 18pt;
+    font-size: 16pt;
     color: var(--main-text-color);
 }
 .experience h3{
-    font-size: 26pt;
+    font-size: 22pt;
     color: var(--text-color);
 }
 .experience p{
-    font-size: 14pt;
+    font-size: 10pt;
     color: var(--text-color);
+    margin: 0;
+}
+/*--- Skills style Start ---*/
+.skills{
+    padding: 10px;
+}
+.skills-items{
+    border-radius: 15px;
+    background-color: #00E091;
+}
+.skills-wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.skills-wrapp img{
+    width: 100px;
+    padding: 5px;
+}
+.skills-wrapp p{
+    font-size: 14pt;
+    font-weight: 700;
 }
 /*--- Portfolio style End ---*/
 
@@ -572,5 +613,10 @@ span{
         font-size: 8pt;
     }
     /*--- Experience & Skills style Start ---*/
+    .experience-skills h2{
+        padding: 20px 10px;
+        margin: 0;
+    }
     /*--- Portfolio style End ---*/
+    
 }
