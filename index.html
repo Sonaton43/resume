@@ -416,18 +416,19 @@
     <section class="contact-code" id="Contact">
         <div class="contact-area">
             <h2>Contact</h2>
-            <form action="#" class="input-bottom">
+            <form id="contact-form" action="#" class="input-bottom">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+                    <input type="text" name="from_name" placeholder="Full Name" required>
+                    <input type="email" name="from_email" placeholder="Email Address" required>
                 </div>
-    
+            
                 <div class="input-box">
-                    <input type="text" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
+                    <input type="text" name="contact_number" placeholder="Mobile Number" required>
+                    <input type="text" name="subject" placeholder="Email Subject" required>
                 </div>
-                    <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="btn">
+            
+                <textarea name="message" id="" cols="30" rows="8" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
             </form>
         </div>
     </section>
@@ -443,7 +444,23 @@
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </div>
-    </footer>  
+    </footer> 
+    
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("yd3gTIbJw0leiUrhu"); // Replace with your actual EmailJS User ID
+        })();
+    
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            emailjs.sendForm("service_3jj8ezq", "template_npdsq7m", this)
+                .then(function() {
+                    alert("Message sent successfully!");
+                }, function(error) {
+                    alert("Failed to send message. Please try again later.");
+                });
+        });
+    </script>
     
 
     <!-- Swiper JS -->
