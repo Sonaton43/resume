@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
         delay: 200
     });
 
-    ScrollReveal().reveal('.home-content h3', { origin: 'top' });
-    ScrollReveal().reveal('.home-img, .services-container,.experience-row', { origin: 'bottom' });
-    ScrollReveal().reveal('.home-content h1,.about-img,.portfolio-items1,.skills-part', { origin: 'left' });
-    ScrollReveal().reveal('.home-content p,.about-full-text,.portfolio-items2,.skills-row', { origin: 'right' });
+    ScrollReveal().reveal('.home-content h3,.services-top', { origin: 'top' });
+    ScrollReveal().reveal('.home-img, .services-container,.experience-row,.services-bottom,.input-bottom', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1,.about-img,.portfolio-items1,.skills-part,.services-left', { origin: 'left' });
+    ScrollReveal().reveal('.home-content p,.about-full-text,.portfolio-items2,.skills-row,.services-right', { origin: 'right' });
 });
