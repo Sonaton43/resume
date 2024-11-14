@@ -25,29 +25,19 @@
 
 <body>
     <!-- Header area Start -->
-    <div class="header-code">
+    <section class="header-code">
         <div class="header-nav">
             <p class="my-header">My Portfolio</p>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
             <p class="my-bars"><i class="fa-solid fa-bars"></i></p>
         </div>
-        <div class="fullscreen-nav">
-            <ul>
-                <span><a class="x-icon in-out" href="#"><i class="fa-solid fa-xmark"></i></a></span>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="header-content">
+        <div class="header-content" id="Home">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
                     <div class="home-content">
@@ -72,11 +62,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Header area End -->
 
     <!-- About area Start -->
-     <div class="about-code">
+     <section class="about-code" id="About">
         <div class="about-area">
             <div class="row about-area-row">
                 <div class="col-lg-4">
@@ -84,9 +74,9 @@
                         <img src="images/1.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 about-full-text">
                     <h3>About <span>Me</span></h3>
-                    <h2>I Develop System that Works</h2>
+                    <h2>I Develop <span class="multiple-text-2"></span></h2>
                     <p style="padding-top: 10px;">Motivated and enthusiastic entry-level web designer and developer with skills in HTML5, CSS3, JavaScript, jQuery, PHP, and Laravel. Strong knowledge of database management using XAMPP. Experienced in creating visuals using Adobe Illustrator and Photoshop. Proficient in using modern development tools like VS Code, Notepad++, and Sublime Text. Seeking to contribute my skills to a dynamic team in a growth-oriented environment.</p>
                     <div class="personal-details">
                         <div class="row">
@@ -136,182 +126,182 @@
                 </div>
             </div>
         </div>
-     </div>
+     </section>
     <!-- About area End -->
 
     <!-- Portfolio area Start -->
-     <div class="portfolio-code">
-        <div class="portfolio-area text-center">
-            <h3><span class="multiple-text">My</span> Portfolio</h3>
-            <h2>My Recent Works</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="portfolio-items d-lg-inline-flex justify-content-lg-between align-items-lg-center">
-                        <p>Ecomerce WEB</p>
-                        <h2 class="text-lg-center mt-2 mt-lg-0">Panchbibi Municipality Website</h2>
-                        <div class="img" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="images/iStock-1186533287-preview.jpg" alt="">
-                            <div class="overlay">
-                                <i class="fas fa-eye"></i> <!-- Font Awesome eye icon -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-items d-lg-inline-flex justify-content-lg-between align-items-lg-center">
-                        <p>Pahrmecy WEB</p>
-                        <h2 class="text-lg-center mt-2 mt-lg-0">Pharmecy Management System</h2>
-                        <div class="img" type="button" data-bs-toggle="modal" data-bs-target="#pharmecy">
-                            <img src="images/iStock-1186533287-preview.jpg" alt="">
-                            <div class="overlay">
-                                <i class="fas fa-eye"></i> <!-- Font Awesome eye icon -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal system-1 -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl ">
-                        <div class="modal-content">
-                            <div class="modal-body modal-body-area">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-end"><a type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></a></div>
+     <section class="" id="Portfolio">
+        <div class="portfolio-code">
+            <div class="portfolio-area text-center">
+                <h3><span class="multiple-text">My</span> Portfolio</h3>
+                <h2>My Recent Works</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portfolio-items portfolio-items1 d-lg-inline-flex justify-content-lg-between align-items-lg-center">
+                            <p>Ecomerce WEB</p>
+                            <h2 class="text-lg-center mt-2 mt-lg-0">Panchbibi Municipality Website</h2>
+                            <div class="img" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="images/iStock-1186533287-preview.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fas fa-eye"></i> <!-- Font Awesome eye icon -->
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 modal-img">
-                                        <img src="images/iStock-1186533287-preview.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="portfolio-items portfolio-items2 d-lg-inline-flex justify-content-lg-between align-items-lg-center">
+                            <p>Pahrmecy WEB</p>
+                            <h2 class="text-lg-center mt-2 mt-lg-0">Pharmecy Management System</h2>
+                            <div class="img" type="button" data-bs-toggle="modal" data-bs-target="#pharmecy">
+                                <img src="images/iStock-1186533287-preview.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fas fa-eye"></i> <!-- Font Awesome eye icon -->
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Modal system-1 -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl ">
+                            <div class="modal-content">
+                                <div class="modal-body modal-body-area">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-end"><a type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></a></div>
                                     </div>
-                                    <div class="col-md-7 modal-text">
-                                        <h2>Panchbibi Municipality Website</h2>
-                                        <p class="pt-0 pt-md-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium fuga molestiae, aut eius minus reprehenderit.
-                                            
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    </div>
-                                    <div class="col-md-5 modal-text">
-                                        <div class="modal-cards">
-                                            <div class="cards-content">
-                                                <p><b>Project Type :</b> <span>Municipality Management</span></p>
-                                                <p><b>Client :</b> <span>Habibur Rahman. ( x Chariman )</span></p>
-                                                <p><b>Duration :</b> <span>4 Month.</span></p>
-                                                <p><b>Task :</b> <span>Design & Develop. ( it's group work )</span></p>
-                                                <p class="pb-4"><b>Budget :</b> <span>250$.</span></p>
-                                                <a href="#" class="custom-btn-3">View live</a>
+                                    <div class="row">
+                                        <div class="col-md-12 modal-img">
+                                            <img src="images/iStock-1186533287-preview.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-7 modal-text">
+                                            <h2>Panchbibi Municipality Website</h2>
+                                            <p class="pt-0 pt-md-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium fuga molestiae, aut eius minus reprehenderit.
+                                                
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="col-md-5 modal-text">
+                                            <div class="modal-cards">
+                                                <div class="cards-content">
+                                                    <p><b>Project Type :</b> <span>Municipality Management</span></p>
+                                                    <p><b>Client :</b> <span>Habibur Rahman. ( x Chariman )</span></p>
+                                                    <p><b>Duration :</b> <span>4 Month.</span></p>
+                                                    <p><b>Task :</b> <span>Design & Develop. ( it's group work )</span></p>
+                                                    <p class="pb-4"><b>Budget :</b> <span>250$.</span></p>
+                                                    <a href="#" class="custom-btn-3">View live</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                    <!-- Modal system-2 -->
-                    <div class="modal fade" id="pharmecy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl ">
-                        <div class="modal-content">
-                            <div class="modal-body modal-body-area">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-end"><a type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 modal-img">
-                                        <img src="images/iStock-1186533287-preview.jpg" alt="">
+                        <!-- Modal system-2 -->
+                        <div class="modal fade" id="pharmecy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl ">
+                            <div class="modal-content">
+                                <div class="modal-body modal-body-area">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-end"><a type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></a></div>
                                     </div>
-                                    <div class="col-md-7 modal-text">
-                                        <h2>Pharmecy Management System</h2>
-                                        <p class="pt-0 pt-md-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium fuga molestiae, aut eius minus reprehenderit.
-                                            
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    </div>
-                                    <div class="col-md-5 modal-text">
-                                        <div class="modal-cards">
-                                            <div class="cards-content">
-                                                <p><b>Project Type :</b> <span>Pharmecy Management</span></p>
-                                                <p><b>Client :</b> <span>Bidhayok Roy </span></p>
-                                                <p><b>Duration :</b> <span>15 Days.</span></p>
-                                                <p><b>Task :</b> <span>Design & Develop.</span></p>
-                                                <p class="pb-4"><b>Budget :</b> <span>100$.</span></p>
-                                                <a href="#" class="custom-btn-3">View live</a>
+                                    <div class="row">
+                                        <div class="col-md-12 modal-img">
+                                            <img src="images/iStock-1186533287-preview.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-7 modal-text">
+                                            <h2>Pharmecy Management System</h2>
+                                            <p class="pt-0 pt-md-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium fuga molestiae, aut eius minus reprehenderit.
+                                                
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="col-md-5 modal-text">
+                                            <div class="modal-cards">
+                                                <div class="cards-content">
+                                                    <p><b>Project Type :</b> <span>Pharmecy Management</span></p>
+                                                    <p><b>Client :</b> <span>Bidhayok Roy </span></p>
+                                                    <p><b>Duration :</b> <span>15 Days.</span></p>
+                                                    <p><b>Task :</b> <span>Design & Develop.</span></p>
+                                                    <p class="pb-4"><b>Budget :</b> <span>100$.</span></p>
+                                                    <a href="#" class="custom-btn-3">View live</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="row pt-0 pt-sm-4">
-                <div class="col-lg-6 experience-skills">
-                    <h2><i class="fa-solid fa-award"></i> My Experience</h2>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2020-2021</h5>
-                            <h3>Junior Graphics Designer</h3>
-                            <p>Personal Shop</p>
-                        </div>
-                    </div>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2022-2023</h5>
-                            <h3>WEB Designer</h3>
-                            <p>Ast. Freelancer</p>
-                        </div>
-                    </div>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2023-2024</h5>
-                            <h3>Junio Laravel Developer</h3>
-                            <p>Lab AR</p>
-                        </div>
-                    </div>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2024-Present</h5>
-                            <h3>Fullstack Developer</h3>
-                            <p>Lab AR</p>
-                        </div>
+                        
                     </div>
                 </div>
-                <div class="col-lg-6 experience-skills">
-                    <h2><i class="fa-solid fa-graduation-cap"></i> My Education</h2>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2023-Present</h5>
-                            <h3>B.sc in CSE</h3>
-                            <p>Northern University Bangladesh</p>
+                <div class="row pt-0 pt-sm-4 experience-row">
+                    <div class="col-lg-6 experience-skills">
+                        <h2><i class="fa-solid fa-award"></i> My Experience</h2>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2020-2021</h5>
+                                <h3>Junior Graphics Designer</h3>
+                                <p>Personal Shop</p>
+                            </div>
+                        </div>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2022-2023</h5>
+                                <h3>WEB Designer</h3>
+                                <p>Ast. Freelancer</p>
+                            </div>
+                        </div>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2023-2024</h5>
+                                <h3>Junio Laravel Developer</h3>
+                                <p>Lab AR</p>
+                            </div>
+                        </div>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2024-Present</h5>
+                                <h3>Fullstack Developer</h3>
+                                <p>Lab AR</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2022-2022</h5>
-                            <h3>Web Development Training</h3>
-                            <p>BDtask Academy,Dhaka</p>
+                    <div class="col-lg-6 experience-skills">
+                        <h2><i class="fa-solid fa-graduation-cap"></i> My Education</h2>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2023-Present</h5>
+                                <h3>B.sc in CSE</h3>
+                                <p>Northern University Bangladesh</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2017-2021</h5>
-                            <h3>Diploma in Engineering CSE</h3>
-                            <p>BIIT, Bogura</p>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2022-2022</h5>
+                                <h3>Web Development Training</h3>
+                                <p>BDtask Academy,Dhaka</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="experience-are">
-                        <div class="experience">
-                            <h5>2016-2017</h5>
-                            <h3>SSC</h3>
-                            <p>LBP High School</p>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2017-2021</h5>
+                                <h3>Diploma in Engineering CSE</h3>
+                                <p>BIIT, Bogura</p>
+                            </div>
+                        </div>
+                        <div class="experience-are">
+                            <div class="experience">
+                                <h5>2016-2017</h5>
+                                <h3>SSC</h3>
+                                <p>LBP High School</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-     </div>
-    <!-- Portfolio area End -->
-    <!-- Skills area Start -->
+        <!-- Skills area Start -->
     <div class="skills-code">
         <div class="skills-area">
             <div class="row">
@@ -322,7 +312,7 @@
                        that inspires you and your customers.</p>
                 </div>
         
-                <div class="col-lg-8">
+                <div class="col-lg-8 skills-row">
                     <div class="row">
                         <div class="col-md-4 col-6 mb-4 text-center skills-text">
                             <div class="skill-circle" data-percentage="85">
@@ -366,49 +356,51 @@
         </div>
     </div>
     <!-- Skills area End -->
+     </section>
+    <!-- Portfolio area End -->
 
     <!-- Services area Start -->
-     <div class="services-code">
+     <section class="services-code" id="Services">
         <div class="services-area">
             <h3><span>My </span>Services</h3>
             <h2>What I Offer</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-11">
                     <div class="our-services-content">
                         <span><i class="fa-solid fa-display text-myprimary"></i></span>
                         <h4>Web Design</h4>
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-11">
                     <div class="our-services-content">
                         <span><i class="fa-brands fa-stack-overflow text-myprimary"></i></span>
                         <h4>Graphic Design</h4>
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-11">
                     <div class="our-services-content">
                         <span><i class="fa-solid fa-code text-myprimary"></i></span>
                         <h4>Web Development</h4>
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-11">
                     <div class="our-services-content">
                         <span><i class="fa-solid fa-comments text-myprimary"></i></span>
                         <h4>Live support</h4>
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-11">
                     <div class="our-services-content">
                         <span><i class="fa-solid fa-globe text-myprimary"></i></span>
                         <h4>support</h4>
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-11">
                     <div class="our-services-content">
                         <span><i class="fa-solid fa-download text-myprimary"></i></span>
                         <h4>download</h4>
@@ -417,11 +409,11 @@
                 </div>
             </div>
         </div>
-     </div>
+     </section>
     <!-- Services area End -->
 
     <!--Contact area Start-->
-    <div class="contact-code">
+    <section class="contact-code" id="Contact">
         <div class="contact-area">
             <h2>Contact</h2>
             <form action="#">
@@ -438,7 +430,7 @@
                 <input type="submit" value="Send Message" class="btn">
             </form>
         </div>
-    </div>
+    </section>
     <!--Contact area End-->
 
     <!-- footer design -->
@@ -459,9 +451,9 @@
 
     <!--Font-Awsome js-->
     <script src="js/jquery.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/slick.min.js"></script>
 
     <script src="js/all.min.js"></script>
@@ -472,6 +464,8 @@
     <script src="js/script.js"></script>
     <!---typed js-->
     <script src="js/typed.umd.js"></script>
+    <!---Scroll Reveal-->
+    <script src="js/scrollreveal.min.js"></script>
     <!-- JQuery CDN -->
     <script>
         window.addEventListener('scroll', function() {
